@@ -160,7 +160,7 @@ private class PluggableRow : Gtk.Box {
             ? info.icons[0]
             : Resources.get_icon(Resources.ICON_GENERIC_PLUGIN, 24);
 
-        var image = new Gtk.Image.from_pixbuf(icon);
+        var image = new Gtk.Image.from_icon_name("piwigo", Gtk.IconSize.BUTTON);
         content.pack_start(image, false, false, 6);
         image.hexpand = false;
 
